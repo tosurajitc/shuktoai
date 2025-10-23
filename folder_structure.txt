@@ -1,0 +1,81 @@
+/ai-services-website/
+├── frontend/
+│   ├── public/
+│   │   ├── images/
+│   │   │   ├── logo.svg
+│   │   │   ├── hero-bg.svg
+│   │   │   ├── services/
+│   │   │   ├── portfolio/
+│   │   │   └── team/
+│   │   └── videos/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── layout/
+│   │   │   ├── ui/
+│   │   │   ├── sections/
+│   │   │   ├── forms/
+│   │   │   └── chat/         # New for GROQ integration
+│   │   ├── pages/
+│   │   ├── styles/
+│   │   ├── lib/
+│   │   │   ├── api.js        # Frontend API handlers
+│   │   │   └── groq.js       # GROQ API integration
+│   │   └── data/
+│   ├── .gitignore
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── tailwind.config.js
+│   └── next.config.js
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── routes/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── contact.py
+│   │   │   │   ├── projects.py
+│   │   │   │   ├── services.py
+│   │   │   │   ├── chat.py       # New for GROQ integration
+│   │   │   │   └── auth.py
+│   │   │   └── dependencies.py
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   ├── config.py
+│   │   │   └── security.py
+│   │   ├── db/
+│   │   │   ├── __init__.py
+│   │   │   ├── base.py
+│   │   │   ├── session.py
+│   │   │   └── init_db.py
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   ├── contact.py
+│   │   │   ├── project.py
+│   │   │   ├── service.py
+│   │   │   ├── chat.py          # New for chat history
+│   │   │   └── user.py
+│   │   ├── schemas/
+│   │   │   ├── __init__.py
+│   │   │   ├── contact.py
+│   │   │   ├── project.py
+│   │   │   ├── service.py
+│   │   │   ├── chat.py          # New for chat schemas
+│   │   │   └── user.py
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   ├── email.py
+│   │   │   ├── file_storage.py
+│   │   │   └── groq_service.py  # New for GROQ API integration
+│   │   └── main.py
+│   ├── alembic/
+│   │   └── ... (migration files)
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   ├── conftest.py
+│   │   └── test_api/
+│   ├── .env
+│   ├── requirements.txt
+│   ├── alembic.ini
+│   └── Dockerfile
+├── docker-compose.yml        # For local development with both services
+└── README.md

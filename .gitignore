@@ -1,0 +1,27 @@
+﻿# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+_env
+
+# Dependencies
+node_modules/
+__pycache__/
+
+# Build outputs
+.next/
+dist/
+build/
+
+# Credentials & Secrets
+credentials.json
+backend/credentials.json
+token.json
+*.pem
+*.key
+config.py
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+run frontend: go to frontend folder: npm run dev
+for backend development: go to backend folder and then : venv\Scripts\activate 
+run backend: C:\@Personal\shuktoai\ai-services-website\backend> uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+
+
+
+git init
+git add .
+git commit -m "Commit new main page generation Oct 23 V2" 
+git remote set-url origin https://github.com/tosurajitc/shuktoai.git
+git push -u origin master
+
+
